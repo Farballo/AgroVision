@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Cámaras y Kits de Seguridad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#inicio">
+        <!-- Imagen que actúa como botón -->
+        <img src="imagenes/logo.jpg" alt="Botón de Inicio" class="logo">
+    </a>
+
+    <section id="inicio">
+        <h1>Sección de Productos</h1>
+        <div class="imagenes">
+            <img src="imagenes/imagen1.jpg" alt="Imagen 1" class="active">
+            <img src="imagenes/imagen2.jpg" alt="Imagen 2">
+            <img src="imagenes/imagen3.jpg" alt="Imagen 3">
+        </div>
+    </section>
+
+    <footer>
+        <h2>Contacto</h2>
+        <form id="contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
