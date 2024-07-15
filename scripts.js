@@ -3,27 +3,6 @@ document.getElementById('contacto').addEventListener('submit', function(event) {
     alert('Formulario enviado');
 });
 
-// Slides
-let currentIndex = 0;
-const images = document.querySelectorAll('.slides img');
-const totalImages = images.length;
-function showNextImage() {
-    const nextIndex = (currentIndex + 1) % totalImages;
-
-    images[currentIndex].classList.remove('active');
-    images[currentIndex].classList.add('prev');
-    
-    images[nextIndex].classList.add('next');
-
-    setTimeout(() => {
-        images[currentIndex].classList.remove('prev');
-        images[nextIndex].classList.remove('next');
-        images[nextIndex].classList.add('active');
-        
-        currentIndex = nextIndex;
-    }, 1000); // Duración de la transición (1s)
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll(".products img");
     const observerOptions = {
@@ -46,3 +25,37 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 setInterval(showNextImage, 5000);
+
+
+var autoplayInterval = 3000;
+var autoplayTimer = null;
+var autoplay = true;
+var newIndex = 1;
+
+if (autoplay) {
+        autoplayTimer = setInterval(function() {
+        newIndex++;
+        navigateSlider();
+    }, autoplayInterval);
+}
+
+function resetSlider() { 
+    clearInterval(autoplayTimer);
+}
+
+function navigateSlider() { 
+    const slide1 = document.getElementById('slide1');
+    const slide2 = document.getElementById('slide2');
+    const slide3 = document.getElementById('slide3');
+    const slide4 = document.getElementById('slide4');
+    if (newIndex == 1) {
+        slide1.checked = true;
+    } else if (newIndex == 2) {
+        slide2.checked = true;
+    } else if (newIndex == 3) {
+        slide3.checked = true;
+    } else if (newIndex == 4) {
+        slide4.checked = true;
+        newIndex = 0;
+    }
+}

@@ -6,40 +6,6 @@
     <title>Venta de Cámaras y Kits de Seguridad</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<script>
-    var autoplayInterval = 3000;
-    var autoplayTimer = null;
-    var autoplay = true;
-    var newIndex = 1;
-    
-    if (autoplay) {
-         autoplayTimer = setInterval(function() {
-         newIndex++;
-         navigateSlider();
-       }, autoplayInterval);
-    }
-    
-    function resetSlider() { 
-      clearInterval(autoplayTimer);
-    }
-    
-    function navigateSlider() { 
-      const slide1 = document.getElementById('slide1');
-      const slide2 = document.getElementById('slide2');
-      const slide3 = document.getElementById('slide3');
-      const slide4 = document.getElementById('slide4');
-      if (newIndex == 1) {
-        slide1.checked = true;
-      } else if (newIndex == 2) {
-        slide2.checked = true;
-      } else if (newIndex == 3) {
-        slide3.checked = true;
-      } else if (newIndex == 4) {
-        slide4.checked = true;
-        newIndex = 0;
-      }
-    }
-</script>
 <body>
     <header>
         <div class="logo_header">
@@ -77,11 +43,33 @@
 
     
     <section id="inicio">
+        
+    <div class="slider">
         <div class="slides">
-            <img src="imagenes/imagen1.jpg" alt="Imagen 1" class="active">
-            <img src="imagenes/imagen2.jpg" alt="Imagen 2">
-            <img src="imagenes/imagen3.jpg" alt="Imagen 3">
-        </div>
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <!--slide images-->
+            <div class="slide first">
+                <img src="imagenes/imagen1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="imagenes/imagen2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="imagenes/imagen3.jpg" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class = "navigation-auto">
+                <div class="auto-btn1">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            <!--automatic navigation end-->
+    </div>
 
         <div class="products">
             <div class="titulo-products">
@@ -115,7 +103,7 @@
             
             
         </div>
-
+        
         <div id="slider">
             <input type="radio" name="slider" id="slide1" checked>
             <input type="radio" name="slider" id="slide2">
@@ -165,41 +153,6 @@
             </div>
         </div>
     </section>
-
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-
-            <!--slide images-->
-            <div class="slide first">
-                <img src="imagenes/imagen1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="imagenes/imagen2.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="imagenes/imagen3.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="imagenes/imagen4.jpg" alt="">
-            </div>
-            <!--slide images end-->
-            <!--automatic navigation start-->
-            <div class = "navigation-auto">
-                <div class="auto-btn1">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-            <!--automatic navigation end-->
-    </div>
-
-
-
 
     <footer>
         <h2>Contacto</h2>
