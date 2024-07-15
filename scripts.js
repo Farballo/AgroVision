@@ -3,10 +3,10 @@ document.getElementById('contacto').addEventListener('submit', function(event) {
     alert('Formulario enviado');
 });
 
+// Slides
 let currentIndex = 0;
 const images = document.querySelectorAll('.slides img');
 const totalImages = images.length;
-
 function showNextImage() {
     const nextIndex = (currentIndex + 1) % totalImages;
 
@@ -25,7 +25,7 @@ function showNextImage() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const images = document.querySelectorAll(".imagenes_camaras img");
+    const images = document.querySelectorAll(".products img");
     const observerOptions = {
         root: null,
         rootMargin: '0px',

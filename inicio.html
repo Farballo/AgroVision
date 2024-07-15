@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Cámaras y Kits de Seguridad</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .imagenes_camaras img {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-        }
-
-        .imagenes_camaras img.appear {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
 </head>
+<script>
+    var autoplayInterval = 3000;
+    var autoplayTimer = null;
+    var autoplay = true;
+    var newIndex = 1;
+    
+    if (autoplay) {
+         autoplayTimer = setInterval(function() {
+         newIndex++;
+         navigateSlider();
+       }, autoplayInterval);
+    }
+    
+    function resetSlider() { 
+      clearInterval(autoplayTimer);
+    }
+    
+    function navigateSlider() { 
+      const slide1 = document.getElementById('slide1');
+      const slide2 = document.getElementById('slide2');
+      const slide3 = document.getElementById('slide3');
+      const slide4 = document.getElementById('slide4');
+      if (newIndex == 1) {
+        slide1.checked = true;
+      } else if (newIndex == 2) {
+        slide2.checked = true;
+      } else if (newIndex == 3) {
+        slide3.checked = true;
+      } else if (newIndex == 4) {
+        slide4.checked = true;
+        newIndex = 0;
+      }
+    }
+</script>
 <body>
     <header>
         <div class="logo_header">
@@ -36,16 +58,20 @@
             </nav>
         </div>
 
-        <div class="logo_wsp">
-            <a href="https://wa.me/5492302584007" style="text-decoration: none;">
-                <img src="imagenes/WhatsApp_icon.png" alt="logo wsp" class="logo_wsp">
-            </a>
-        </div>
-        <div class="numero_wsp">
-            <a href="https://wa.me/5492302584007" style="text-decoration: none;">
-                <p>WhatsApp</p>
-                <p>+54 9 2302 58-4007</p>
-            </a>
+        <div class="whatsapp">
+            <div class="logo_wsp">
+                <a href="https://wa.me/5492302584007" style="text-decoration: none;">
+                    <img src="imagenes/WhatsApp_icon.png" alt="logo wsp" class="logo_wsp">
+                </a>
+            </div>
+            <div class="columna_whatsapp">
+                <div class="numero_wsp">
+                    <a href="https://wa.me/5492302584007" style="text-decoration: none;">
+                        <p>WhatsApp</p>
+                        <p>+54 9 2302 58-4007</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -57,33 +83,122 @@
             <img src="imagenes/imagen3.jpg" alt="Imagen 3">
         </div>
 
-        <div class="imagenes_camaras">
-            <div class="imagen izq">
-                <img src="imagenes/camara1.jpg" alt="Cámara 1" width="500">
+        <div class="products">
+            <div class="titulo-products">
+                <h2>Conectividad con la última tecnología</h1>
             </div>
-            <div class="imagen medio">
-                <img src="imagenes/starlink.png" alt="Cámara 2" width="500">
+            <div class="three-columns">
+                <div class="column left">
+                    <div class="product left">
+                        <img src="imagenes/camara1.jpg" alt="Producto 1">
+                    </div>
+                    <h2>Sistemas de monitoreo autónomo</h2>
+                    <p>Alimentado por energía solar, nuestros kits de monitoreo autónomos están diseñados para ofrecer vigilancia continua en ubicaciones donde el despliegue de cables de alimentación es complicado. Este sistema avanzado garantiza un funcionamiento sostenible y reduce la dependencia de fuentes de energía tradicionales. Con múltiples opciones de configuración, puedes diseñar el sistema de vigilancia que mejor se adapte a tu entorno y necesidades. Ofrece ángulos de visión amplios y ajustables para asegurar que no se pierda ningún detalle crucial, y está construido para proporcionar un monitoreo constante y eficiente en una variedad de escenarios, desde áreas urbanas hasta ubicaciones remotas. La implementación es sencilla y rápida, permitiéndote empezar a vigilar de inmediato. Ideal para hogares, negocios y propiedades rurales, este kit combina tecnología de última generación con flexibilidad y confiabilidad, asegurando una supervisión efectiva en cualquier lugar, en todo momento.</p>
+                </div>
+                <div class="column center">
+                    <div class="product center">
+                        <img src="imagenes/halow.jpg" alt="Producto 2">
+                    </div>
+                    <h2>Nuevo WiFi HaLow</h2>
+                    <p>Nuestros productos WiFi HaLow están diseñados para proporcionar una conectividad robusta y de largo alcance en ubicaciones donde las señales tradicionales de WiFi no llegan. Este sistema avanzado asegura una conexión estable y eficiente, ideal para áreas rurales y extensas. Con diversas opciones de configuración, puedes crear la red inalámbrica que mejor se adapte a tu entorno. Ofrece una cobertura amplia y penetrante para mantener una comunicación continua y fiable, incluso a través de obstáculos y largas distancias. La instalación es sencilla y rápida, permitiéndote establecer una red funcional en poco tiempo. Perfectos para hogares, negocios y propiedades rurales, estos productos combinan la tecnología WiFi HaLow más avanzada con flexibilidad y confiabilidad, garantizando una conectividad eficaz en cualquier lugar, en todo momento.</p>
+                </div>
+                <div class="column right">
+                    <div class="product right">
+                        <img src="imagenes/starlink.png" alt="Producto 3">
+                    </div>
+                    <h2>Internet en donde sea</h2>
+                    <p>El kit Starlink de Internet está diseñado para proporcionar una conexión de alta velocidad y baja latencia en ubicaciones remotas donde el acceso a Internet tradicional es limitado. Este sistema avanzado utiliza una red de satélites para ofrecer un servicio fiable y rápido, ideal para áreas rurales y de difícil acceso. Con un proceso de instalación sencillo y rápido, puedes configurar tu conexión a Internet en poco tiempo. Ofrece una cobertura amplia y constante, asegurando que puedas disfrutar de una conectividad continua y eficiente. Perfecto para hogares, negocios y propiedades rurales, el kit Starlink combina la última tecnología satelital con flexibilidad y confiabilidad, garantizando una experiencia de Internet superior en cualquier lugar y en todo momento.</p>
+                </div>
+                
             </div>
-            <div class="imagen der">
-                <img src="imagenes/halow.jpg" alt="Cámara 3" width="500">
+            
+            
+            
+        </div>
+
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                           <h2>Slide 1</h2>
+                           <p>Content for Slide 1</p>
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                           <h2>Slide 2</h2>
+                           <p>Content for Slide 2</p>
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                           <h2>Slide 3</h2>
+                           <p>Content for Slide 3</p>
+                        </div>
+                     </div>
+                     <div class="slide slide_4">
+                        <div class="slide-content">
+                           <h2>Slide 4</h2>
+                           <p>Content for Slide 4</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
             </div>
         </div>
     </section>
 
-    <section class="three-columns">
-        <div class="column left">
-            <h2>Columna 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="column center">
-            <h2>Columna 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="column right">
-            <h2>Columna 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </section>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <!--slide images-->
+            <div class="slide first">
+                <img src="imagenes/imagen1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="imagenes/imagen2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="imagenes/imagen3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="imagenes/imagen4.jpg" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class = "navigation-auto">
+                <div class="auto-btn1">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            <!--automatic navigation end-->
+    </div>
+
+
 
 
     <footer>
