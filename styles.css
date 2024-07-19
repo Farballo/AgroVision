@@ -105,8 +105,10 @@ nav ul li a:hover {
     padding: 0pc 0;
 }
 .slider {
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden;
     margin: 0;
@@ -114,7 +116,7 @@ nav ul li a:hover {
 
 .slides {
     width: 500%;
-    height: 500px;
+    height: 100%;
     display: flex;
 }
 
@@ -128,15 +130,17 @@ nav ul li a:hover {
 }
 
 .slide img{
-    width: 100%;
-    height: auto;
+    min-width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+    height: 100%;
 }
 
 /* css for manual slide navigation */
 .navigation-manual {
     position: absolute;
     width: 100%;
-    margin-top: 450px;
+    margin-top: 350px;
     display: flex;
     justify-content: center;
 }
@@ -176,7 +180,7 @@ nav ul li a:hover {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 450px;
+    margin-top: 350px;
 }
 
 .navigation-auto div {
@@ -216,17 +220,17 @@ nav ul li a:hover {
 
 .products img {
     opacity: 0;
-    height: 400px;
-    width: auto;
+    height: auto;
+    width: 400px;
     transform: translateY(20px);
     transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-    
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
 .products img:hover {
     cursor: pointer;
-    height: 420px;
-    transition: .3s;
+    width: 420px;
+    transition: .8s;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -239,18 +243,29 @@ nav ul li a:hover {
 .three-columns {
     display: flex;
     justify-content: space-between;
+    background-position: 50%;
+    box-sizing: border-box;
+    font-size: 100%;
+    background-size: cover;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: auto;
 }
 
 /* Estilos para cada columna */
 .column {
     flex: 1; /* Todas las columnas tienen flexibilidad igual */
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 50px;
     display: flex;
     flex-direction: column; /* Asegura que el contenido fluya verticalmente */
     align-items: center; /* Centra los elementos horizontalmente */
     text-align: justify; /* Centra el texto */
+    box-sizing: border-box;
+    font-size: 100%;
+    background-size: cover;
 }
 
 .column h2 {

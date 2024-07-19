@@ -5,49 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Cámaras y Kits de Seguridad</title>
     <link rel="stylesheet" href="test.css">
+    <link rel="shortcut icon" href="imagenes/agrosafe_icono.png">
+    <script></script>
 </head>
 <body>
-    <div class="slider">
-        <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
+    <header>
+        <div class="logo_header">
+            <a href="inicio.html">
+                <img src="imagenes/logo.jpg" alt="Botón de Inicio" class="logo">
+            </a>
+        </div>
 
-            <!--slide images-->
-            <div class="slide first">
-                <img src="imagenes/imagen1.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="imagenes/imagen2.jpg" alt="">
-            </div>
-            <div class="slide">
-                <img src="imagenes/imagen3.jpg" alt="">
-            </div>
-            <!--slide images end-->
-            <!--automatic navigation start-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-            <!--automatic navigation end-->
-    </div>
+        <div class="secciones">
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <script type="text/javascript">
-        var counter = 1;
-        setInterval(function(){
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if(counter > 3){
-                counter = 1;
-            }
-        }, 5000);
-    </script>
+        <div class="instagram">
+            <div class="logo_ig">
+                <a href="https://www.instagram.com/" style="text-decoration: none;">
+                    <img src="imagenes/Instagram_icon.png" alt="logo ig" class="logo_ig">
+                </a>
+            </div>
+        </div>
+        <div class="whatsapp">
+            <div class="logo_wsp">
+                <a href="https://wa.me/5492302584007" style="text-decoration: none;">
+                    <img src="imagenes/WhatsApp_icon.png" alt="logo wsp" class="logo_wsp">
+                </a>
+            </div>
+            <div class="columna_whatsapp">
+                <div class="numero_wsp">
+                    <a href="https://wa.me/5492302584007" style="text-decoration: none;">
+                        <p>WhatsApp</p>
+                        <p>+54 9 2302 58-4007</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section id="inicio">
+        
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+    
+                <!--slide images-->
+                <div class="slide first">
+                    <img src="imagenes/imagen1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagenes/imagen2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagenes/imagen3.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <!--automatic navigation end-->
+        </div>
+
+        <div class="products">
+            <div class="titulo-products">
+                <h2>Conectividad con la última tecnología</h1>
+            </div>
+            <div class="four-columns">
+                <div class="column left">
+                    <div class="image-container">
+                        <div class="image-background" style="background-image: url('imagenes/camara1.jpg');"></div>
+                    </div>
+                    <h2>Kits de monitoreo autónomo</h2>
+                    <p>Alimentados con paneles solares, con baterías y tecnología IP para conectarlo a tu celular, te permiten una vigilancia constante las 24 horas del día no importa el lugar</p>
+                </div>
+                <div class="column center left">
+                    <div class="image-container">
+                        <div class="image-background" style="background-image: url('imagenes/halow.jpg');"></div>
+                    </div>
+                    <h2>Nuevo WiFi HaLow</h2>
+                    <p>Nuevo protocolo de WiFi capaz de interconectar dispositivos a centenares de metros sin la necesidad de cables y con un consumo mínimo de energía.</p>
+                </div>
+                <div class="column center right">
+                    <div class="image-container">
+                        <div class="image-background" style="background-image: url('imagenes/Camara_DS-2DE4225IW-DE.png');"></div>
+                    </div>
+                    <h2>Cámaras con zoom óptico</h2>
+                    <p>Alcanza distancias de hasta km con una sola cámara con los dispositivos Hikvision de x25 aumentos ópticos.</p>
+                </div>
+                <div class="column right">
+                    <div class="image-container">
+                        <div class="image-background" style="background-image: url('imagenes/Starlink.png');"></div>
+                    </div>
+                    <h2>Internet en donde sea</h2>
+                    <p>Kit Starlink para Internet de alta velocidad y baja latencia en cualquier lugar del planeta. Conectá cualquier equipo que necesites a internet sin preocuparte nunca más por la capacidad de transmisión</p>
+                </div>
+                
+            </div>
+            
+            
+            
+        </div>
+        
+        
+    <footer>
+        <h2>Contacto</h2>
+        <form id="contacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
 

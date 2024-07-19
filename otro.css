@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Cámaras y Kits de Seguridad</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="shortcut icon" href="imagenes/agrosafe_icono.png">
+    <script></script>
+</head>
+<body>
+    <div class="image-container">
+        <div class="image-background"></div>
+    </div>
+</body>
+</html>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.image-container {
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+.image-background {
+    width: 100%;
+    height: 100%;
+    background-image: url('imagenes/camara1.jpg'); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease;
+}
+
+.image-container:hover .image-background {
+    transform: scale(1.2);
+}
