@@ -44,6 +44,10 @@ header {
     margin-left: 40px;
 }
 
+.logos {
+    display: flex;
+}
+
 .logo_ig {
     position: flex;
     justify-content: flex-end;
@@ -334,10 +338,27 @@ nav ul li a:hover {
         margin-bottom: 20px; /* Espacio entre columnas en disposición de columna */
     }
 }
-/* Contenido principal para ocupar espacio restante */
-main {
-    flex: 1;
+.et_pb_section {
+    background-color: #C8D60D;
 }
+
+.et_pb_equal_columns {
+    display: flex;
+    box-sizing: border-box;
+    font-size: 100%;
+    justify-content: center;
+}
+
+.et_pb_column_1_3 {
+    padding: 30px;
+    max-width: 400px;
+
+}
+
+.et_pb_blurb_description {
+    text-align: justify;
+}
+
 
 footer {
     background-color: #212121;
