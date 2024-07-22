@@ -5,7 +5,7 @@ setInterval(function(){
     if(counter > 3){
         counter = 1;
     }
-}, 5000);
+}, 10000);
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -31,6 +31,23 @@ function initializeImageObserver() {
     images.forEach(img => {
         observer.observe(img);
     });
+}
+
+window.onscroll = function() {stickyHeader()};
+
+var header = document.querySelector("header");
+var sticky = header.offsetTop + 2000; // Ajusta el valor para el punto donde el header debe dejar de ser fijo
+
+function stickyHeader() {
+    if (window.pageYOffset > sticky) {
+        header.classList.remove("sticky");
+        header.style.position = "absolute";
+        header.style.top = sticky + "px"; // Mantén el header en su posición
+    } else {
+        header.classList.add("sticky");
+        header.style.position = "fixed";
+        header.style.top = "0";
+    }
 }
 
 /* 

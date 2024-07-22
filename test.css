@@ -10,83 +10,58 @@ body {
 header {
     background-color: white;
     color: #333;
-    padding: 5px 15px;
+    padding: 5px 0px;
     font-size: 16px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
+
+    width: 90%;
+    height: 8vh;
     z-index: 1000;
-    display: flex; /* Cambiado a flex para alinear los elementos */
-    text-align: center; /* Centra los elementos dentro del header */
+    justify-content: space-between; /* Cambiado a space-between para distribuir los elementos */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header.sticky {
+    position: fixed;
     top: 0;
 }
 
 /* Estilos para los divs */
 .logo {
-    display: flex;
-    justify-content: flex-start;
     height: auto;
     width: 200px;
     margin-top: 5px;
-    transition: .5s;
+    padding-left: 15px;
 }
 
 .logo:hover {
-    cursor: pointer;
-    width: 210px;
-    transition: 1s;    
+    cursor: pointer;   
 }
 
 .secciones {
     flex: 1;
     display: flex;
     justify-content: center;
-    margin-top: 15px;
-    margin-left: 40px;
 }
 
 .logos {
     display: flex;
 }
 
-.logo_ig {
-    position: flex;
-    justify-content: flex-end;
+.logo_ig, .logo_wsp {
     height: 50px;
     width: 50px;
-    margin-top: 4px;
-    margin-right: 10px;
-    filter: drop-shadow(0 1px 2px rgba(0,0,0,.2));
+    padding-right: 15px;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
 }
 
-.logo_wsp {
-    position: flex;
-    justify-content: flex-end;
-    height: 50px;
-    width: 50px;
-    margin-top: 4px;
-    margin-right: 10px;
-    filter: drop-shadow(0 1px 2px rgba(0,0,0,.4));
-}
-
-.whatsapp {
-    display:flex;
-}
-
-.columna_whatsapp {
-    justify-content: left;
-    align-items: left;
-    margin-top: 15px;
-}
-
-.numero_wsp p {
-    color:#333;
-    text-align: left;
-    line-height: 1.25;
-    font-size: 1em;
-    font-weight: 600;
-    margin-right: 25px;
-    margin: 0;
-}
 
 .secciones nav ul {
     list-style-type: none;
@@ -154,7 +129,7 @@ nav ul li a:hover {
 .navigation-manual {
     position: absolute;
     width: 100%;
-    top: 55%;
+    top: 50%;
     display: flex;
     justify-content: center;
 }
@@ -194,7 +169,7 @@ nav ul li a:hover {
     display: flex;
     width: 100%;
     justify-content: center;
-    top: 55%;
+    top: 50%;
 }
 
 .navigation-auto div {
@@ -324,7 +299,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: #007BFF; /* Color de fondo inicial */
+    background-color: #28a745; /* Color de fondo inicial */
     color: white; /* Color del texto */
     text-decoration: none;
     border-radius: 5px; /* Bordes redondeados */
@@ -332,7 +307,7 @@ nav ul li a:hover {
 }
 
 .boton_products:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    background-color: #218838; /* Color de fondo al pasar el mouse */
 }
 
 .et_pb_equal_columns {
@@ -424,7 +399,7 @@ nav ul li a:hover {
 footer {
     background-color: #333;
     color: white;
-    padding: 40px 0;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -486,4 +461,73 @@ textarea.form-control {
 
 .btn:hover {
     background-color: #218838;
+}
+
+.footer-section {
+    background-color: #28a745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+}
+
+.footer-section-container {
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;;
+    justify-content: top;
+    align-items: top;
+}
+
+.footer-section div {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-section .footer-logo {
+    max-width: 80px;
+    transition: transform 0.3s;
+    margin-top: 15px;
+}
+
+.footer-section .footer-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-section .contact-method {
+    text-align: left;
+}
+
+.footer-section .social-media {
+    text-align: left;
+}
+
+.footer-section .ubicacion {
+    text-align: left;
+}
+
+.social-media h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.footer-section .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
 }

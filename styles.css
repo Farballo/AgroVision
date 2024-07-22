@@ -2,7 +2,6 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 250vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -15,11 +14,10 @@ header {
     font-size: 16px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
-    top: 0;
     z-index: 1000;
     display: flex; /* Cambiado a flex para alinear los elementos */
     text-align: center; /* Centra los elementos dentro del header */
-    
+    top: 0;
 }
 
 /* Estilos para los divs */
@@ -32,9 +30,7 @@ header {
 }
 
 .logo:hover {
-    cursor: pointer;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-    
+    cursor: pointer;   
 }
 .secciones {
     flex: 1;
