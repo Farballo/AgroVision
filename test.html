@@ -162,18 +162,35 @@
         </div>
         </div>
         </div>
+    
+        <div class="mission-section">
+            <div class="content-box">
+                <div class="mission-header">
+                    <h1 class="mission-title">Nuestra misión</h1>
+                    <img src="imagenes/agrosafe_icono.png" alt="Logo de la Empresa" class="mission-logo">
+                </div>
+                <p class="mission-text">Nacemos con el objetivo de traerte la mejor tecnología para que puedas contar con una seguridad y conectividad constante sin importar las condiciones del lugar. Sabemos los innumerables problemas y preocupaciones que conlleva la vida rural y queríamos ofrecer herramientas modernas para las complicaciones cotidianas.</p>
+                <p class="mission-text">De aquí surge AgroSafe, una empresa especializada en el rubro y ámbito agropecuario, con soluciones de monitoreo, internet y conectividad para que sin importar la localidad, lejanía o falta de servicios, siempre podamos ofrecerte una solución diseñada especialmente para tus necesidades.</p>
+            </div>
+        </div>
     </section>
         
     <footer>
         <h2>Consultanos por productos y/o asesoramiento</h2>
-        <form id="contacto">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+        <form action="https://formsubmit.co/facundo.nicolas.arballo@gmail.com" method="POST">
+            <!--Nombre-->
+                <label class="form-label" for="i_nombre">Nombre:</label>
+                <input class="form-control" type="text" id="i_nombre" name="nombre" required>
+            <!--Correo Electrónico-->
+                <label class="form-label" for="i_correo">Correo electrónico:</label>
+                <input class="form-control" type="email" id="i_correo" name="correo" required>
+            <!--Mensaje-->
+                <label class="form-label" for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+            <!--Asunto-->
+                <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+            <!--Botón Enviar-->
+                <input class="btn btn-success" type="submit" value="ENVIAR">
         </form>
     </footer>
 

@@ -1,8 +1,3 @@
-document.getElementById('contacto').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Formulario enviado');
-});
-
 var counter = 1;
 setInterval(function(){
     document.getElementById('radio' + counter).checked = true;
@@ -18,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function initializeImageObserver() {
-    const images = document.querySelectorAll(".products img");
+    const images = document.querySelectorAll(".et_pb_main_blurb_image img");
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -29,7 +24,6 @@ function initializeImageObserver() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("appear");
-                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -38,3 +32,13 @@ function initializeImageObserver() {
         observer.observe(img);
     });
 }
+
+/* 
+else {
+    setTimeout(() => {
+        if (!entry.isIntersecting) {
+            entry.target.classList.remove("appear");
+        }
+    }, 5000);
+}
+*/
