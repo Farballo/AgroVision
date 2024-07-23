@@ -10,20 +10,18 @@ body {
 header {
     background-color: white;
     color: #333;
-    padding: 5px 0px;
+    padding: 5px 0;
     font-size: 16px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+    margin-top: 15px;
     width: 90%;
-    height: 8vh;
     z-index: 1000;
-    justify-content: space-between; /* Cambiado a space-between para distribuir los elementos */
+    justify-content: space-between;
     display: flex;
     align-items: center;
     text-align: center;
     border-radius: 15px;
     position: absolute;
-    top: 5%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -38,6 +36,7 @@ header.sticky {
     height: auto;
     width: 200px;
     margin-top: 5px;
+    margin-left: 15px;
     padding-left: 15px;
 }
 
@@ -53,26 +52,27 @@ header.sticky {
 
 .logos {
     display: flex;
+    margin-right: 15px;
 }
 
 .logo_ig, .logo_wsp {
     height: 50px;
     width: 50px;
-    padding-right: 15px;
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+    padding: 5px;
 }
-
 
 .secciones nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 75px;
+    margin: 0 50px;
 }
 
 nav ul li a {
@@ -87,6 +87,37 @@ nav ul li a {
 nav ul li a:hover {
     color: #D71820;
     border-bottom: 2px solid #D71820; /* Subraya el texto al pasar el mouse y en la sección activa */
+}
+
+/* Estilos responsivos era 768px*/
+@media (max-width: 1268px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 40px;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .logos {
+        margin-top: 10px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 150px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
 }
 
 #inicio {
@@ -198,39 +229,39 @@ nav ul li a:hover {
 }
 
 .products {
+    text-align: center;
     justify-content: center;
+    width: 90%;
+    margin: auto;
 }
 
 .titulo-products {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.5em;
     color: #333333;
+    margin-bottom: 20px;
 }
-/* Estilos para la sección de tres columnas */
+
 .four-columns {
     display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
     justify-content: space-between;
-    background-position: 50%;
-    box-sizing: border-box;
-    font-size: 100%;
-    background-size: cover;
     max-width: 1440px;
-    background-repeat: no-repeat;
-    width: 90%;
     margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .image-container {
-    width: 300px;
+    width: 100%;
+    max-width: 300px; /* Establece un tamaño máximo para las imágenes */
     height: 300px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     border-radius: 8px;
-    opacity: 0; /* Inicia con opacidad 0 */
-    transform: translateY(20px); /* Inicia ligeramente desplazado hacia abajo */
-    animation: fadeIn 1s ease-in-out forwards; /* Aplica la animación */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+    margin-bottom: 20px;
 }
 
 .image-background {
@@ -249,7 +280,6 @@ nav ul li a:hover {
     transition: 1s;
 }
 
-/* Definición de la animación */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -261,30 +291,75 @@ nav ul li a:hover {
     }
 }
 
-/* Estilos para cada columna */
 .column {
-    flex: 1; /* Todas las columnas tienen flexibilidad igual */
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 50px;
+    flex: 1 1 300px; /* Flexibilidad para ajustarse y un tamaño mínimo */
+    padding: 0 20px 50px;
     display: flex;
-    flex-direction: column; /* Asegura que el contenido fluya verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
-    text-align: justify; /* Centra el texto */
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
-    font-size: 100%;
-    background-size: cover;
 }
 
 .column h2 {
-    padding-top: 0px;
     font-size: 1.3em;
     color: #333333;
+    margin-top: 10px;
 }
 
 .column p {
     font-weight: 350;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Botón de productos */
+.boton_container {
+    margin-top: 20px;
+}
+
+.boton_products {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D71820;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton_products:hover {
+    background-color: #a31318;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 100%; /* Las columnas ocupan el 100% del ancho en pantallas pequeñas */
+        padding: 10px 0;
+    }
+
+    .four-columns {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-products {
+        font-size: 1.2em;
+    }
+
+    .column h2 {
+        font-size: 1.1em;
+    }
+
+    .column p {
+        font-size: 0.9em;
+    }
+
+    .image-container {
+        height: 200px;
+    }
 }
 
 .boton_container {

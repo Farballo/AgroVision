@@ -4,46 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Cámaras y Kits de Seguridad</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="test.css">
+    <link rel="shortcut icon" href="imagenes/agrosafe_icono.png">
+    <script></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-            </ul>
-        </nav>
+        <div class="logo_header">
+            <a href="inicio.html">
+                <img src="imagenes/logo.jpg" alt="Botón de Inicio" class="logo">
+            </a>
+        </div>
+
+        <div class="secciones">
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#guias">Guías</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logos">
+            <div class="instagram">
+                <div class="logo_ig">
+                    <a href="https://www.instagram.com/" style="text-decoration: none;">
+                        <img src="imagenes/Instagram_icon.png" alt="logo ig" class="logo_ig">
+                    </a>
+                </div>
+            </div>
+            <div class="whatsapp">
+                <div class="logo_wsp">
+                    <a href="https://wa.me/5492302584007" style="text-decoration: none;">
+                        <img src="imagenes/WhatsApp_icon.png" alt="logo wsp" class="logo_wsp">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
     </header>
 
-    <a href="#inicio">
-        <!-- Imagen que actúa como botón -->
-        <img src="imagenes/logo.jpg" alt="Botón de Inicio" class="logo">
-    </a>
-
-    <section id="inicio">
-        <h1>Sección de Productos</h1>
-        <div class="imagenes">
-            <img src="imagenes/imagen1.jpg" alt="Imagen 1" class="active">
-            <img src="imagenes/imagen2.jpg" alt="Imagen 2">
-            <img src="imagenes/imagen3.jpg" alt="Imagen 3">
+    
+    <section id="productos">
+        <div class="products-section-1">
+            <div class="products-section-1-title">
+                <h2>Consulta por nuestro catálogo de soluciones</h1>
+            </div>
         </div>
-    </section>
+            <div class="products-section-2">
+                <div class="products-section-2-row-1">
+                    <h2>Kits de monitoreo autónomo</h2>
+                    <div class="image-container">
+                        <div class="image-background" style="background-image: url('imagenes/camara1.jpg');"></div>
+                    </div>
 
+                    <p>Alimentados con paneles solares, con baterías y tecnología IP para conectarlo a tu celular, te permiten una vigilancia constante las 24 horas del día no importa el lugar</p>
+                </div>
+                <div class="products-section-2-row-2">
+                    <div class="image-container">
+                        <div class="image-background" style="background-image: url('imagenes/halow.jpg');"></div>
+                    </div>
+                    <h2>Nuevo WiFi HaLow</h2>
+                    <p>Nuevo protocolo de WiFi capaz de interconectar dispositivos a centenares de metros sin la necesidad de cables y con un consumo mínimo de energía.</p>
+                </div>
+                <div class="products-section-2-row-3">
+                    <div class="image-container">
+                        <div class="image-background" style="background-image: url('imagenes/Camara_DS-2DE4225IW-DE.png');"></div>
+                    </div>
+                    <h2>Cámaras con zoom óptico</h2>
+                    <p>Alcanza distancias de hasta km con una sola cámara con los dispositivos Hikvision de x25 aumentos ópticos.</p>
+                </div>
+                <div class="products-section-2-row-4">
+                    <div class="image-container">
+                        <div class="image-background" style="background-image: url('imagenes/Starlink.png');"></div>
+                    </div>
+                    <h2>Internet en donde sea</h2>
+                    <p>Kit Starlink para Internet de alta velocidad y baja latencia en cualquier lugar del planeta. Conectá cualquier equipo que necesites a internet sin preocuparte nunca más por la capacidad de transmisión</p>
+                </div>
+            </div>
+            <div class="boton_container">
+                <a href="productos.html" class="boton_products">Ver más</a>
+            </div>
+        
+    </section>
+        
     <footer>
-        <h2>Contacto</h2>
-        <form id="contacto">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+        <h2>Consultanos por productos y/o asesoramiento</h2>
+        <form action="https://formsubmit.co/facundo.nicolas.arballo@gmail.com" method="POST">
+            <!--Nombre-->
+            <label class="form-label" for="i_nombre">Nombre:</label>
+            <input class="form-control" type="text" id="i_nombre" name="nombre" required>
+            <!--Correo Electrónico-->
+            <label class="form-label" for="i_correo">Correo electrónico:</label>
+            <input class="form-control" type="email" id="i_correo" name="correo" required>
+            <!--Mensaje-->
+            <label class="form-label" for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+            <!--Asunto-->
+            <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+            <!--Botón Enviar-->
+            <input class="btn btn-success" type="submit" value="ENVIAR">
         </form>
+        <div class="footer-section">
+            <div class="footer-section-container">
+                <div>
+                    <img src="imagenes/agrosafe_icono.png" alt="Logo de la empresa" class="footer-logo">
+                </div>
+                <div class="contact-method">
+                    <h2>Contactános</h2>
+                    <p>Contacto: +54 9 2302 58-4007</p>
+                    <p>Correo: contacto@empresa.com</p>
+                </div>
+                <div class="ubicacion">
+                    <h2>Encontranos en</h2>
+                    <p>CABA</p>
+                    <p>Pergamino, Bs As</p>
+                    <p>General Pico, La Pampa</p>
+                </div>
+                <div class="social-media">
+                    <h2>Seguinos en nuestras redes</h2>
+                    <a href="https://www.instagram.com/" style="text-decoration: none;">
+                        <img src="imagenes/Instagram_icon.png" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/5492302584007" style="text-decoration: none;">
+                        <img src="imagenes/WhatsApp_icon.png" alt="WhatsApp">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        
     </footer>
 
     <script src="scripts.js"></script>
 </body>
 </html>
+
+
