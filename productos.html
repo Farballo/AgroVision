@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Cámaras y Kits de Seguridad</title>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="productos.css">
     <link rel="shortcut icon" href="imagenes/agrosafe_icono.png">
     <script></script>
 </head>
@@ -15,79 +15,93 @@
                 <img src="imagenes/logo.jpg" alt="Botón de Inicio" class="logo">
             </a>
         </div>
-
+    
         <div class="secciones">
             <nav>
                 <ul>
                     <li><a href="inicio.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#guias">Guías</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="guias.html">Guías</a></li>
                 </ul>
             </nav>
         </div>
-
+    
         <div class="logos">
-            <div class="instagram">
-                <div class="logo_ig">
-                    <a href="https://www.instagram.com/" style="text-decoration: none;">
-                        <img src="imagenes/Instagram_icon.png" alt="logo ig" class="logo_ig">
-                    </a>
-                </div>
-            </div>
-            <div class="whatsapp">
-                <div class="logo_wsp">
-                    <a href="https://wa.me/5492302584007" style="text-decoration: none;">
-                        <img src="imagenes/WhatsApp_icon.png" alt="logo wsp" class="logo_wsp">
-                    </a>
-                </div>
-            </div>
+            <a href="https://www.instagram.com/" class="social-icon">
+                <img src="imagenes/Instagram_icon.png" alt="logo ig" class="logo_ig">
+            </a>
+            <a href="https://wa.me/5492302584007" class="social-icon">
+                <img src="imagenes/WhatsApp_icon.png" alt="logo wsp" class="logo_wsp">
+            </a>
         </div>
-        
     </header>
-
     
     <section id="productos">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+    
+                <!--slide images-->
+                <div class="slide first">
+                    <img src="imagenes/imagen1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagenes/imagen2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagenes/imagen3.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <!--automatic navigation end-->
+        </div>
         <div class="products-section-1">
             <div class="products-section-1-title">
-                <h2>Consulta por nuestro catálogo de soluciones</h1>
+                <h2>Consultá por nuestro catálogo de soluciones</h2>
             </div>
         </div>
-            <div class="products-section-2">
-                <div class="products-section-2-row-1">
-                    <h2>Kits de monitoreo autónomo</h2>
-                    <div class="image-container">
-                        <div class="image-background" style="background-image: url('imagenes/camara1.jpg');"></div>
+        <div class="products-section-2">
+            <div class="product">
+                <div class="image-container">
+                    <div class="image-background" style="background-image: url('imagenes/camara1.jpg');"></div>
+                    <div class="product-description">
+                        <h2>Kits de monitoreo autónomo</h2>
+                        <p>Alimentados con paneles solares, con baterías y tecnología IP para conectarlo a tu celular, te permiten una vigilancia constante las 24 horas del día no importa el lugar</p>
                     </div>
-
-                    <p>Alimentados con paneles solares, con baterías y tecnología IP para conectarlo a tu celular, te permiten una vigilancia constante las 24 horas del día no importa el lugar</p>
-                </div>
-                <div class="products-section-2-row-2">
-                    <div class="image-container">
-                        <div class="image-background" style="background-image: url('imagenes/halow.jpg');"></div>
-                    </div>
-                    <h2>Nuevo WiFi HaLow</h2>
-                    <p>Nuevo protocolo de WiFi capaz de interconectar dispositivos a centenares de metros sin la necesidad de cables y con un consumo mínimo de energía.</p>
-                </div>
-                <div class="products-section-2-row-3">
-                    <div class="image-container">
-                        <div class="image-background" style="background-image: url('imagenes/Camara_DS-2DE4225IW-DE.png');"></div>
-                    </div>
-                    <h2>Cámaras con zoom óptico</h2>
-                    <p>Alcanza distancias de hasta km con una sola cámara con los dispositivos Hikvision de x25 aumentos ópticos.</p>
-                </div>
-                <div class="products-section-2-row-4">
-                    <div class="image-container">
-                        <div class="image-background" style="background-image: url('imagenes/Starlink.png');"></div>
-                    </div>
-                    <h2>Internet en donde sea</h2>
-                    <p>Kit Starlink para Internet de alta velocidad y baja latencia en cualquier lugar del planeta. Conectá cualquier equipo que necesites a internet sin preocuparte nunca más por la capacidad de transmisión</p>
                 </div>
             </div>
-            <div class="boton_container">
-                <a href="productos.html" class="boton_products">Ver más</a>
+            <div class="product">
+                <div class="image-container">
+                    <div class="image-background" style="background-image: url('imagenes/Camara_DS-2DE4225IW-DE.png');"></div>
+                    <div class="product-description">
+                        <h2>Cámaras con zoom óptico</h2>
+                        <p>Alcanza distancias de hasta km con una sola cámara con los dispositivos Hikvision de x25 aumentos ópticos.</p>
+                    </div>
+                </div>
             </div>
-        
+            <div class="product">
+                <div class="image-container">
+                    <div class="image-background" style="background-image: url('imagenes/Starlink.png');"></div>
+                    <div class="product-description">
+                        <h2>Internet en donde sea</h2>
+                        <p>Kit Starlink para Internet de alta velocidad y baja latencia en cualquier lugar del planeta. Conectá cualquier equipo que necesites a internet sin preocuparte nunca más por la capacidad de transmisión</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
         
     <footer>

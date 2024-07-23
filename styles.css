@@ -252,8 +252,8 @@ nav ul li a:hover {
 
 .image-container {
     width: 100%;
-    max-width: 300px; /* Establece un tamaño máximo para las imágenes */
-    height: 300px;
+    max-width: 630px; /* Establece un tamaño máximo para las imágenes */
+    height: 325px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     position: relative;
@@ -261,14 +261,12 @@ nav ul li a:hover {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s ease-in-out forwards;
-    margin-bottom: 20px;
+
 }
 
 .image-background {
-    width: 80%;
-    height: 80%;
-    margin-top: 20px;
-    margin-left: 30px;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     transition: transform 1s ease;
@@ -292,7 +290,7 @@ nav ul li a:hover {
 }
 
 .column {
-    flex: 1 1 300px; /* Flexibilidad para ajustarse y un tamaño mínimo */
+    flex: 1 1 600px; /* Flexibilidad para ajustarse y un tamaño mínimo */
     padding: 0 20px 50px;
     display: flex;
     flex-direction: column;
