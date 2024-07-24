@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function initializeImageObserver() {
-    const images = document.querySelectorAll(".et_pb_main_blurb_image img");
+    const images = document.querySelectorAll(".service-img");
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -59,3 +59,14 @@ else {
     }, 5000);
 }
 */
+
+function toggleMenu() {
+    var navMenu = document.getElementById('nav-menu');
+    if (navMenu.style.display === 'flex') {
+        navMenu.style.display = 'none';
+    } else {
+        navMenu.style.display = 'flex';
+        navMenu.style.flexDirection = 'column';
+        navMenu.style.alignItems = 'center';
+    }
+}

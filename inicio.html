@@ -35,11 +35,19 @@
                 <img src="imagenes/WhatsApp_icon.png" alt="logo wsp" class="logo_wsp">
             </a>
         </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="nav-menu" id="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="guias.html">Guías</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    
     <section id="inicio">
-        
         <div class="slider">
             <div class="slides">
                 <input type="radio" name="radio-btn" id="radio1" checked>
@@ -70,7 +78,6 @@
                 </div>
                 <!--automatic navigation end-->
         </div>
-
         <div class="products">
             <div class="titulo-products">
                 <h2>Conectividad con la última tecnología</h1>
@@ -110,41 +117,50 @@
             </div>
         </div>
         
-        <div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular">
-            <div class="et_pb_row et_pb_row_5 et_pb_equal_columns et_pb_gutters1">
-            <div class="et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
-            <div class="et_pb_module et_pb_blurb et_pb_blurb_0  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
-            <div class="et_pb_blurb_content">
-                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" width="50" height="50" src="imagenes/logo_asesoramiento.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-42 et-animated"></span></div>
-                <div class="et_pb_blurb_container">
-                    <h4 class="et_pb_module_header"><span>ASESORAMIENTO ESPECIALIZADO</span></h4>
-                    <div class="et_pb_blurb_description">Te brindamos nuestra ayuda y recomendación en base a tus necesidades y las particularidades del lugar de instalación del producto. Realizando un análisis de los servicios disponibles en el lugar y las necesidades a cubrir podemos ofrecer una solución personalizada que mejor se adapte a cada escenario.</div>
+        <div class="section section-specialized">
+            <div class="row row-services">
+                <div class="column column-service">
+                    <div class="service service-advice">
+                        <div class="service-content">
+                            <div class="service-image">
+                                <img src="imagenes/logo_asesoramiento.png" alt="Asesoramiento Especializado" class="service-img">
+                            </div>
+                            <div class="service-info">
+                                <h4 class="service-title">ASESORAMIENTO ESPECIALIZADO</h4>
+                                <p class="service-description">Te brindamos nuestra ayuda y recomendación en base a tus necesidades y las particularidades del lugar de instalación del producto. Realizando un análisis de los servicios disponibles en el lugar y las necesidades a cubrir podemos ofrecer una solución personalizada que mejor se adapte a cada escenario.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-service">
+                    <div class="service service-shipping">
+                        <div class="service-content">
+                            <div class="service-image">
+                                <img src="imagenes/logo_envio.png" alt="Envíos a todo Argentina" class="service-img">
+                            </div>
+                            <div class="service-info">
+                                <h4 class="service-title">ENVÍOS A TODO ARGENTINA</h4>
+                                <p class="service-description">Envío gratis a todo el país para que no importa tu localidad puedas acceder a la mejor tecnología siempre.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-service">
+                    <div class="service service-support">
+                        <div class="service-content">
+                            <div class="service-image">
+                                <img src="imagenes/logo_soporte.png" alt="Soporte Técnico" class="service-img">
+                            </div>
+                            <div class="service-info">
+                                <h4 class="service-title">SOPORTE TÉCNICO</h4>
+                                <p class="service-description">Contamos con equipos de fácil instalación y armado para que puedas ponerlos en funcionamiento apenas los recibas, junto con nuestros instructivos personalizados, pero también contamos con soporte técnico especializado para cualquier eventualidad que surja.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </div><div class="et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_9  et_pb_css_mix_blend_mode_passthrough">
-            <div class="et_pb_module et_pb_blurb et_pb_blurb_1  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
-            <div class="et_pb_blurb_content">
-                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async" width="58" height="52" src="imagenes/logo_envio.png"></span></div>
-                <div class="et_pb_blurb_container">
-                    <h4 class="et_pb_module_header"><span>ENVÍOS A TODO ARGENTINA</span></h4>
-                    <div class="et_pb_blurb_description">Envío gratis a todo el país para que no importa tu localidad puedas acceder a la mejor tecnología siempre.</div>
-                </div>
-            </div>
-        </div>
-        </div><div class="et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_10  et_pb_css_mix_blend_mode_passthrough et-last-child">
-            <div class="et_pb_module et_pb_blurb et_pb_blurb_2  et_pb_text_align_left  et_pb_blurb_position_top et_pb_bg_layout_light">
-            <div class="et_pb_blurb_content">
-                <div class="et_pb_main_blurb_image"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img loading="lazy" decoding="async" width="64" height="60" src="imagenes/logo_soporte.png" alt="" class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone wp-image-40 et-animated"></span></div>
-                <div class="et_pb_blurb_container">
-                    <h4 class="et_pb_module_header"><span>SOPORTE TÉCNICO</span></h4>
-                    <div class="et_pb_blurb_description">Contamos con equipos de fácil instalación y armado para que puedas ponerlos en funcionamiento apenas los recibas, junto con nuestros instructivos personalizados, pero también contamos con soporte técnico especializado para cualquier eventualidad que surja.</div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
+        
     
         <div class="mission-section">
             <div class="content-box">
