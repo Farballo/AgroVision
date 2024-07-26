@@ -286,7 +286,6 @@ nav ul li a:hover {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s ease-in-out forwards;
-
 }
 
 .image-background {
@@ -335,6 +334,16 @@ nav ul li a:hover {
     text-align: justify;
     margin-top: 10px;
     max-width: 630px;
+}
+
+/* Nuevo CSS para asegurar que los enlaces no interfieran con los estilos de las imágenes */
+.column a {
+    display: block;
+    width: 100%;
+    max-width: 630px;
+    height: 325px;
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Botón de productos */
@@ -585,7 +594,7 @@ textarea.form-control {
 }
 
 .footer-section {
-    background-color: #28a745;
+    background: linear-gradient(45deg, #006400, #00FF7F);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -605,12 +614,12 @@ textarea.form-control {
     flex: 1;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0px;
+    line-height: 0.75;
 }
 
 .footer-section .footer-logo {
-    max-width: 80px;
+    max-height: 80px;
     transition: transform 0.3s;
     margin-top: 15px;
 }
