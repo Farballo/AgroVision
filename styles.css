@@ -527,10 +527,17 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333;
+    /*background-color: #333;*/
+    background-color: white;
     color: white;
     padding-top: 30px;
     text-align: center;
+}
+
+.form-title {
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
 }
 
 footer h2 {
@@ -594,7 +601,8 @@ textarea.form-control {
 }
 
 .footer-section {
-    background: linear-gradient(45deg, #006400, #00FF7F);
+    background-color: #333333;
+    /*background: linear-gradient(45deg, #202020, #202020);*/
     display: flex;
     justify-content: center;
     align-items: center;
