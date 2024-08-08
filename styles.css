@@ -314,7 +314,7 @@ nav ul li a:hover {
 }
 
 .column {
-    flex: 1 1 600px; /* Flexibilidad para ajustarse y un tamaño mínimo */
+    flex: 1 1 40%; /* Flexibilidad para ajustarse y un tamaño mínimo */
     padding: 0 20px 50px;
     display: flex;
     flex-direction: column;
@@ -431,7 +431,7 @@ nav ul li a:hover {
 }
 
 .column-service {
-    flex: 1;
+    flex: 1 1 30%; /* Flexibilidad para ajustarse y un tamaño mínimo */
     max-width: 600px;
     padding: 20px;
     box-sizing: border-box;
@@ -476,6 +476,18 @@ nav ul li a:hover {
     text-align: justify;
     font-weight: 350;
     font-size: 16px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .column-service {
+        flex: 1 1 100%; /* Las columnas ocupan el 100% del ancho en pantallas pequeñas */
+        padding: 10px 10px;
+    }
+    
+    .row-services {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    }
 }
 
 .mission-section {
@@ -541,7 +553,7 @@ footer {
 }
 
 footer h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -620,8 +632,8 @@ textarea.form-control {
 
 .footer-section div {
     flex: 1;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     padding-top: 0px;
     line-height: 0.75;
 }
@@ -642,6 +654,7 @@ textarea.form-control {
 
 .footer-section .social-media {
     text-align: left;
+    line-height: 1;
 }
 
 .footer-section .ubicacion {
@@ -650,7 +663,7 @@ textarea.form-control {
 
 .social-media h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
 }
 
@@ -667,4 +680,15 @@ textarea.form-control {
 
 .social-media img:hover {
     transform: scale(1.1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+    .ubicacion {
+        display: none;
+    }
+
+    .contact-method {
+        display: none;
+    }
 }
