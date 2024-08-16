@@ -205,17 +205,22 @@ nav ul li a:hover {
     }
 }
 
-
-
 footer {
-    background-color: #333;
+    /*background-color: #333;*/
+    background-color: white;
     color: white;
     padding-top: 30px;
     text-align: center;
 }
 
+.form-title {
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
 footer h2 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -275,7 +280,8 @@ textarea.form-control {
 }
 
 .footer-section {
-    background-color: #28a745;
+    background-color: #333333;
+    /*background: linear-gradient(45deg, #202020, #202020);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -286,6 +292,7 @@ textarea.form-control {
 .footer-section-container {
     padding-left: 200px;
     padding-right: 200px;
+    padding-bottom: 10px;
     display: flex;;
     justify-content: top;
     align-items: top;
@@ -293,14 +300,14 @@ textarea.form-control {
 
 .footer-section div {
     flex: 1;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 0px;
+    line-height: 0.75;
 }
 
 .footer-section .footer-logo {
-    max-width: 80px;
+    max-height: 80px;
     transition: transform 0.3s;
     margin-top: 15px;
 }
@@ -315,6 +322,7 @@ textarea.form-control {
 
 .footer-section .social-media {
     text-align: left;
+    line-height: 1;
 }
 
 .footer-section .ubicacion {
@@ -323,7 +331,7 @@ textarea.form-control {
 
 .social-media h2 {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
 }
 
@@ -333,7 +341,6 @@ textarea.form-control {
 }
 
 .social-media img {
-    
     width: 50px;
     height: 50px;
     transition: transform 0.3s;
@@ -341,4 +348,15 @@ textarea.form-control {
 
 .social-media img:hover {
     transform: scale(1.1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 1000px) {
+    .ubicacion {
+        display: none;
+    }
+
+    .contact-method {
+        display: none;
+    }
 }
