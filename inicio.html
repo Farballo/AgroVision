@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venta de Cámaras y Kits de Seguridad</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="imagenes/agrosafe_icono.png">
     <script></script>
 </head>
@@ -48,36 +49,33 @@
         </div>
     </header>
     <section id="inicio">
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1" checked>
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-    
-                <!--slide images-->
-                <div class="slide first">
-                    <img src="imagenes/imagen1.png" alt="">
+        <div id="AgroVision-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#AgroVision-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#AgroVision-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#AgroVision-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="6000">
+                  <img src="imagenes/imagen1.png" class="d-block w-100 c-img" alt="Slide 1">
                 </div>
-                <div class="slide">
-                    <img src="imagenes/imagen2.png" alt="">
+                <div class="carousel-item" data-bs-interval="6000">
+                  <img src="imagenes/imagen2.png" class="d-block w-100 c-img" alt="Slide 2">
                 </div>
-                <div class="slide">
-                    <img src="imagenes/imagen3.png" alt="">
+                <div class="carousel-item" data-bs-interval="6000">
+                  <img src="imagenes/imagen3.png" class="d-block w-100 c-img" alt="Slide 3">
                 </div>
-                <!--slide images end-->
-                <!--automatic navigation start-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                </div>
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-                <!--automatic navigation end-->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#AgroVision-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#AgroVision-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next<|span>
+            </button>
         </div>
+        
         <div class="products">
             <div class="titulo-products">
                 <h2>Conectividad con la última tecnología</h1>
@@ -125,7 +123,7 @@
             </div>
         </div>
         
-        <div class="section section-specialized">
+        <div class="section-specialized">
             <div class="row row-services">
                 <div class="column column-service">
                     <div class="service service-advice">
@@ -233,6 +231,7 @@
     </footer>
 
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
 
