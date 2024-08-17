@@ -61,9 +61,15 @@ function stickyHeader() {
 
 function toggleMenu() {
     var navMenu = document.getElementById('nav-menu');
+    var logo_empresa = document.getElementById('logo-empresa-header');
+    var logos_redes = document.getElementById('logos-redes-header');
     if (navMenu.style.display === 'flex') {
         navMenu.style.display = 'none';
+        logo_empresa.style.display = 'flex';
+        logos_redes.style.display = 'flex';
     } else {
+        logo_empresa.style.display = 'none';
+        logos_redes.style.display = 'none';
         navMenu.style.display = 'flex';
         navMenu.style.flexDirection = 'column';
         navMenu.style.alignItems = 'center';
