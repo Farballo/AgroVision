@@ -1,0 +1,59 @@
+#guias {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.guides-section-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.guides-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.guide-item {
+    width: 40%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.guide-item h3 {
+    font-size: 1.2em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.guide-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.guide-item a:hover {
+    background-color: #218838;
+}
+
+.guide-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .guide-item {
+        width: 80%;
+    }
+}
