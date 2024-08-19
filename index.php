@@ -30,7 +30,7 @@ include('includes/header.php');
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#AgroVision-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next<|span>
+                <span class="visually-hidden">Next</span>
             </button>
         </div>
 
@@ -40,7 +40,7 @@ include('includes/header.php');
             </div>
             <div class="four-columns">
                 <div class="column left">
-                    <a href="productos.html">
+                    <a href="productos.php">
                         <div class="image-container">
                             <div class="image-background" style="background-image: url('imagenes/Solar-Powered-Products-Hikvision.jpg');"></div>
                         </div>
@@ -49,7 +49,7 @@ include('includes/header.php');
                     <p>Equipados con paneles solares y baterías incluidas, estos dispositivos utilizan tecnología IP para conectarse a tu celular, brindando vigilancia constante las 24 horas del día, sin importar la ubicación.</p>
                 </div>
                 <div class="column center left">
-                    <a href="productos.html">
+                    <a href="productos.php">
                         <div class="image-container">
                             <div class="image-background" style="background-image: url('imagenes/cows.jpg');"></div>
                         </div>
@@ -58,7 +58,7 @@ include('includes/header.php');
                     <p>Ya sea por datos móviles o por WiFi, siempre existe una solución para que puedas acceder a Internet sin importar tu ubicación o necesidades.</p>
                 </div>
                 <div class="column center right">
-                    <a href="productos.html">
+                    <a href="productos.php">
                         <div class="image-container">
                             <div class="image-background" style="background-image: url('imagenes/producto_camara_optica_2.png');"></div>
                         </div>
@@ -67,7 +67,7 @@ include('includes/header.php');
                     <p>Alcanzá a cubrir distancias de hasta kilómetros con una sola cámara con los dispositivos Hikvision de x25 aumentos ópticos sin la necesidad de un armado complejo ni costoso.</p>
                 </div>
                 <div class="column right">
-                    <a href="productos.html">
+                    <a href="productos.php">
                         <div class="image-container">
                             <div class="image-background" style="background-image: url('imagenes/Starlink2.png');"></div>
                         </div>
@@ -77,7 +77,7 @@ include('includes/header.php');
                 </div>
             </div>
             <div class="boton_container">
-                <a href="productos.html" class="boton_products">Ver más</a>
+                <a href="productos.php" class="boton_products">Ver más</a>
             </div>
         </div>
         

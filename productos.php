@@ -36,7 +36,7 @@ include('includes/header.php');
         
         <div class="products-section-1">
             <div class="products-section-1-title">
-                <h2>Consultá por nuestro catálogo de soluciones</h2>
+                <h1>Consultá por nuestro catálogo de soluciones</h1>
             </div>
         </div>
         <div class="products-section-2">
@@ -47,6 +47,9 @@ include('includes/header.php');
                         <h2>Kits de monitoreo autónomo</h2>
                         <p>Equipados con paneles solares y baterías incluidas, estos dispositivos utilizan tecnología IP para conectarse a tu celular, brindando vigilancia constante las 24 horas del día, sin importar la ubicación.</p>
                         <p>Cuenta con manejo de la cámara compatible con cualquier Smartphone, podés contar con la tranquilidad de un monitoreo continuo sin importar cortes de luz, Internet u otras complicaciones.</p>
+                        <div class="boton_container">
+                            <a href="guias/AgroVision_Kit_Solar_4G.pdf" class="boton_products">Ver más</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -57,6 +60,9 @@ include('includes/header.php');
                         <h2>Cámaras con zoom óptico</h2>
                         <p>Alcanzá a cubrir distancias de hasta kilómetros con una sola cámara con los dispositivos Hikvision de x25 aumentos ópticos sin la necesidad de un armado complejo ni costoso.</p>
                         <p>Cuentan con conexión remota a tu celular desde donde podés controlar el ángulo de visión y zoom de la cámara, junto con otros parámetros tales como alertas, alarmas y mucho más.</p>
+                        <div class="boton_container">
+                            <a href="guias/AgroVision_Kit_Zoom_Optico.pdf" class="boton_products">Ver más</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,6 +73,9 @@ include('includes/header.php');
                         <h2>Internet en donde sea</h2>
                         <p>Kit Starlink para Internet de alta velocidad y baja latencia en cualquier lugar del planeta. Conectá cualquier equipo que necesites a Internet sin preocuparte nunca más por la capacidad de transmisión.</p>
                         <p>Disponible sin importar ubicación geográfica gracias a la constelación de satélites de Starlink, podés alcanzar velocidades de descarga mayores a 100Mbps a un precio mensual accesible y no tener más la molestia de un servicio lento o intermitente de Internet.</p>
+                        <div class="boton_container">
+                            <a href="productos.php" class="boton_products">Ver más</a>
+                        </div>
                     </div>
                 </div>
             </div>

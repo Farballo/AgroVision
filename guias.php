@@ -8,24 +8,24 @@ include('includes/header.php');
 <main>
     <section id="guias">
         <div class="guides-section-title">
-            <h2>Nuestras Guías y Tutoriales</h2>
+            <h2>Guías y Tutoriales</h2>
         </div>
         <div class="guides-container">
             <div class="guide-item">
-                <h3>Guía de Monitoreo Autónomo</h3>
-                <a href="imagenes/2407DJEN0098557N.pdf" download>Descargar</a>
+                <h3>Guía Compartir acceso Hik-Connect</h3>
+                <a href="guias/Instructivo_compartir_acceso_Hik_connect.pdf" download>Descargar</a>
             </div>
             <div class="guide-item">
-                <h3>Instructivo de Instalación de WiFi HaLow</h3>
-                <a href="path/to/instalacion_wifi_halow.pdf" download>Descargar</a>
+                <h3>Manual Kit Hikvision Solar 4G</h3>
+                <a href="https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000002/S000000003/S000005599/OFR014428/M000069080/User_Manual/UD28967B-C_Network-Camera_User-Manual_5.7.20_20240131.PDF" download>Descargar</a>
             </div>
             <div class="guide-item">
-                <h3>Manual de Uso de Cámaras con Zoom Óptico</h3>
-                <a href="path/to/manual_uso_camaras.pdf" download>Descargar</a>
+                <h3>Datasheet Cámara Hikvision 2Mpx</h3>
+                <a href="guias/Cámara_2Mp_DS-2DE4225IW-DET5_V5.7.1_20220704.pdf" download>Descargar</a>
             </div>
             <div class="guide-item">
-                <h3>Kit Starlink para Internet</h3>
-                <a href="path/to/kit_starlink.pdf" download>Descargar</a>
+                <h3>Datasheet Kit Hikvision Solar 4G</h3>
+                <a href="guias/DS-2XS3Q47G1-LDH_4G_Datasheet_20230708.pdf" download>Descargar</a>
             </div>
         </div>
     </section>

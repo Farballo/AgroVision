@@ -4,7 +4,7 @@
 }
 
 .mission-section {
-    background-image: url('/imagenes/8.jpg'); /* Cambia 'background.jpg' a la ruta de tu imagen de fondo */
+    background-image: url('../imagenes/8.jpg'); /* Cambia 'background.jpg' a la ruta de tu imagen de fondo */
     background-size: cover;
     background-position: center;
     width: 100%;

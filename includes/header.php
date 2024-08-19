@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <?php 
         if (isset($additional_styles)) {
@@ -23,10 +23,10 @@
         <div class="secciones">
             <nav>
                 <ul>
-                    <li><a href="/index.php">Inicio</a></li>
-                    <li><a href="/productos.php">Productos</a></li>
-                    <li><a href="/nosotros.php">Nosotros</a></li>
-                    <li><a href="/guias.php">Guías</a></li>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="productos.php">Productos</a></li>
+                    <li><a href="nosotros.php">Nosotros</a></li>
+                    <li><a href="guias.php">Guías</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,10 +43,10 @@
         <div class="nav-menu" id="nav-menu">
             <nav>
                 <ul>
-                    <li><a href="/index.php">Inicio</a></li>
-                    <li><a href="/productos.php">Productos</a></li>
-                    <li><a href="/nosotros.php">Nosotros</a></li>
-                    <li><a href="/guias.php">Guías</a></li>
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="productos.php">Productos</a></li>
+                    <li><a href="nosotros.php">Nosotros</a></li>
+                    <li><a href="guias.php">Guías</a></li>
                 </ul>
             </nav>
         </div>

@@ -117,10 +117,9 @@ nav ul li a:hover {
     .menu-toggle {
         order: 0;
         display: block;
-        width: 0px;
         margin-left: 0px;
     }
-
+    
     .logo_header {
         order: 1;
         margin-left: 0px;
@@ -222,7 +221,6 @@ textarea.form-control {
 
 .footer-section {
     background-color: #333333;
-    /*background: linear-gradient(45deg, #202020, #202020);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -248,10 +246,6 @@ textarea.form-control {
 .footer-logo {
     max-height: 80px;
     transition: transform 0.3s;
-}
-
-.footer-section .footer-logo:hover {
-    transform: scale(1.1);
 }
 
 .footer-section .contact-method {
