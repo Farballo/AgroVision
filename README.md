@@ -2,6 +2,8 @@
 
 AgroVision is an innovative project focused on providing continuous security and connectivity solutions for rural areas, leveraging modern technology to overcome challenges in remote locations.
 
+visit: https://www.agrovision360.com
+
 ## Project Overview
 
 AgroVision offers autonomous monitoring kits equipped with solar panels, batteries, and IP technology for 24/7 surveillance. These devices can connect via mobile data or WiFi, making them ideal for areas with limited infrastructure. The solutions provided include:
