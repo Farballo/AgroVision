@@ -26,14 +26,11 @@ AgroVision aims to provide cutting-edge technology to improve security and conne
 ```bash
 AgroVision/
 │
-├── src/                   # Source code for IoT integration
-│   ├── main.py            # Main logic for data collection and monitoring
-│   ├── camera_module/      # Camera control and image processing scripts
-│   └── network_module/     # Connectivity management for mobile data and WiFi
+├── css/
 │
-├── docs/                  # Documentation for the project
+├── imagenes/
 │
-├── tests/                 # Unit and integration tests for the monitoring system
+├── includes/
 │
 └── README.md              # Project readme file
 ```
